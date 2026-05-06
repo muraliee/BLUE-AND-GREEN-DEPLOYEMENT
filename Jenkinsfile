@@ -18,7 +18,7 @@ pipeline {
               script {
                 sh ('aws eks update-kubeconfig --name mohan-cluster2 --region us-east-2')
                 sh "kubectl get ns"
-                sh "kubectl apply -f blue.yaml"
+                sh "kubectl apply -f k8s/blue.yaml"
         }
       }
     }
